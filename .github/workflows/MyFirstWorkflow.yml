@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greet the user
-      - run: |
+        run: |
           echo "Hello world from ${{ github.actor }}."
           echo "Current branch is '${{ github.ref}}'."
       - name: Checkout
