@@ -15,5 +15,10 @@ jobs:
                 echo "Workflow truggered in branch '${{ github.ref}}'"
                 echo "Workflow triggered by event '${{ github.event_name }}'"
                 echo "Workflow triggered by actor '${{ github.actor }}'"
+            - run: |
+                echo "::debug::This is a debug message"
+                echo "::nootice::This is a notice message"
+                echo "::warning::This is a warning message"
+                echo "::error::This is a error message"
             - uses: actions/checkout@v4.2.2
             - uses: devops-actions/actionlint@v0.1.3
